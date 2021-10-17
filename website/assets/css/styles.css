@@ -1,0 +1,156 @@
+.main {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:767px) {
+  .main {
+    padding: 15px 0;
+  }
+}
+
+.main form {
+  display: table-cell;
+  width: 70%;
+  max-width: 70rem;
+  min-width: 300px;
+  margin: 20px auto;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 8.0px );
+  -webkit-backdrop-filter: blur( 8.0px );
+  border-radius: 10px;
+  padding: 40px;
+}
+
+@media (max-width:767px) {
+  .main form {
+    padding: 30px;
+  }
+}
+
+.main h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  color: inherit;
+  line-height: 1.5;
+}
+
+.main .form-group:last-child {
+  margin-bottom: 5px;
+}
+
+.main form .form-control {
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 16.0px );
+  -webkit-backdrop-filter: blur( 16.0px );
+  border-radius: 5px;
+  outline: none;
+  color: #3b4355;
+  padding-left: 12px;
+  height: 42px;
+  caret-color: #3b4355;
+  margin: 0px 0px 12px;
+  border: none;
+  box-shadow: none;
+  text-indent: 6px;
+}
+
+.main form textarea.form-control {
+  height: 200px;
+  margin-top: 32px;
+  padding-top: 10px;
+  resize: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.main form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none !important;
+}
+
+.main form .btn:hover {
+  opacity: 1;
+}
+
+.main form .btn:active {
+  transform: translateY(1px);
+}
+
+.main form .btn-primary {
+  width: 100%;
+  margin: 30px 0px 0px;
+  background-color: rgb(255,199,0) !important;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.main form .btn-accept {
+  width: 49%;
+  margin: 30px 0px 0px;
+  background-color: rgb(72, 255, 0) !important;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.main form .btn-deny {
+  width: 49%;
+  margin: 30px 0px 0px;
+  background-color: rgb(255, 38, 0) !important;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.logo-holder {
+  display: grid;
+  align-items: center;
+}
+
+.logo {
+  margin: 2em 0;
+  width: 83%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error {
+  font-size: 4em;
+  margin: 2.2em 0;
+  text-align: center;
+}
+
+.date {
+  color: lightgray;
+}
+
+.status {
+  margin: 0 auto 5px auto;
+  padding: 0 10px;
+  width: fit-content;
+  backdrop-filter: blur( 9.0px );
+  -webkit-backdrop-filter: blur( 9.0px );
+  border-radius: 5px;
+}
+
+.PENDING { background: rgba( 74, 144, 226, 0.45 ) }
+
+.SUBMITTED { background: rgba( 245, 166, 35, 0.45 ) }
+
+.ACCEPTED { background: rgba( 126, 211, 33, 0.45 ) }
+
+.DENIED { background: rgba( 208, 2, 27, 0.45 ) }

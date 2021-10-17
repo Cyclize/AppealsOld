@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Go 1.16.4
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Setup Go
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.16.4
+      - name: Build Website
+        run: |
+          cd website
+          go build
+      - name: Build Server
+        run: |
+          cd server
+          go build
+      - name: Upload Website
+        uses: actions/upload-artifact@v2
+        with:
+          name: Website
+          path: |
+            website/website
+            website/assets
+            website/templates
+      - name: Upload Server
+        uses: actions/upload-artifact@v2
+        with:
+          name: Server
+          path: |
+            server/server
+            server/config.json
+            server/spawn.schematic

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LuckyNetwork Appeals</title>
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.webp"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger">APPEALS</a>	
+				<a class="nav-link active js-scroll-trigger">USER</a>
+      </div>
+    </nav>
+    <div class="main">
+      <form>
+        <div class="form-group row">
+          <div class="col-lg logo-holder">
+            <img src="/assets/img/luckynetwork.webp" alt="logo" class="logo">
+          </div>
+          <div class="col-lg">
+            <p class="text-center status {{.Status}}">{{.Status}}</p>
+            <h2 class="text-center">{{.Name}} BAN APPEAL</h2>
+            <p class="text-center date">{{.Date}}</p>
+            <textarea name="reason" class="form-control" type="text" spellcheck="false" disabled>{{.Reason}}</textarea>
+            <button type="button" class="btn btn-primary" onclick="location.href='/archive/{{.UUID}}'">View Archive</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
